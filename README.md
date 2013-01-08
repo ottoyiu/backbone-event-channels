@@ -1,7 +1,7 @@
 backbone-event-channels
 =======================
 
-A simple factory for creating and referencing namespaced Backbone event aggregators, or 'channels', on the fly.
+A simple **factory** for creating and referencing **namespaced Backbone event aggregators**, or **'channels'**, on the fly.
 
 Installation
 ============
