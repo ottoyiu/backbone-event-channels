@@ -4,7 +4,7 @@ backbone-event-channels
 A simple **factory** for creating and referencing **namespaced Backbone event aggregators**, or **'channels'**, on the fly.
 
 Motivation
-==========
+----------
 The [BackboneJS](http://backbonejs.org/) events system is a powerful tool, but programmers often have to resort to dependency injection and tight coupling to pass events through several layers of code, from one disparate object to another. In light of this problem, many have turned to **event aggregators** -- a centralized dispatcher every object can access. As of December 13th, this functionality is even built into Backbone 0.9.9 (the Backbone object itself acts as a global event aggregator). 
 
 While a centralized aggregator works well, as programmers, we often try to avoid global cesspools. Thus, this project. With the `BackboneEventChannelFactory`, you now have the power to separate events into namespaced channels as you need them.
@@ -14,15 +14,15 @@ For further reading, see Derick Bailey's blog posts on event aggregators:
 * [Revisiting The Backbone Event Aggregator...](http://lostechies.com/derickbailey/2012/04/03/revisiting-the-backbone-event-aggregator-lessons-learned/)
 
 Installation
-============
+------------
 The `BackboneEventChannelFactory.js` file is designed to be used in a [RequireJS](http://requirejs.org/) environment.
 
 If you're using RequireJS, just define `BackboneEventChannelFactory` as per usual.
 
 If you're not using RequireJS, simply delete the `define([],function(){})` wrapper and associated `return BackboneEventChannelFactory` statement. You'll then have to ensure that `_` and `Backbone` are available in whatever scope you place the factory definition in.
 
-Example
-=======
+Examples
+--------
 **To create/get a channel**, you might do something like this:
 ```javascript
 this.testChannel = BackboneEventChannelFactory.getChannel('testChannel');
