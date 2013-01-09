@@ -31,9 +31,9 @@ this.testChannel = BackboneEventChannelFactory.getChannel('testChannel');
 Once done, you can **bind to events on your channel** as you would any other Backbone object:
 ```javascript
 //(in Backbone 0.9.2)
-this.testChannel.on('test', function(){ alert('woot');});` 
+this.testChannel.on('test', function(){ alert('woot');});
 // or (in Backbone >0.9.9)
-obj.listenTo(this.testChannel, 'test', function(){ alert('woot');});` 
+obj.listenTo(this.testChannel, 'test', function(){ alert('woot');});
 ```
 
 If you find you need to **delete a channel**, you must **both** unregister it from the factory AND delete ALL local references:
