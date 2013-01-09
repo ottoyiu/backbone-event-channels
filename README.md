@@ -36,6 +36,11 @@ this.testChannel.on('test', function(){ alert('woot');});
 obj.listenTo(this.testChannel, 'test', function(){ alert('woot');});
 ```
 
+... and **trigger events**:
+```javascript
+this.testChannel.trigger('test');
+```
+
 If you find you need to **delete a channel**, you must **both** unregister it from the factory AND delete ALL local references:
 ```javascript
 // delete local reference(s)
