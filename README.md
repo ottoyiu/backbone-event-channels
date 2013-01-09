@@ -38,9 +38,9 @@ obj.listenTo(this.testChannel, 'test', function(){ alert('woot');});`
 
 If you find you need to **delete a channel**, you must **both** unregister it from the factory AND delete ALL local references:
 ```javascript
-// delete local reference
+// delete local reference(s)
 delete this.testChannel;
-// unregister/delete factory's local reference(s)
+// unregister/delete factory's reference
 BackboneEventChannelFactory.unregisterChannel('testChannel');
 // Now the garbage collector is free to delete the actual object.
 ```
