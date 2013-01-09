@@ -5,7 +5,7 @@ A simple **factory** for creating and referencing **namespaced Backbone event ag
 
 Motivation
 ==========
-The [BackboneJS](http://backbonejs.org/) events system is a powerful tool, but often-times programmers have to resort to dependency injection and tight coupling to pass events through several layers of code, from one disparate object to another. In light of this problem, many have turned to **event aggregators** -- a centralized dispatcher every object can access. As of December 13th, this functionality is even built into Backbone 0.9.9 (the Backbone object itself acts as a global event aggregator). 
+The [BackboneJS](http://backbonejs.org/) events system is a powerful tool, but programmers often have to resort to dependency injection and tight coupling to pass events through several layers of code, from one disparate object to another. In light of this problem, many have turned to **event aggregators** -- a centralized dispatcher every object can access. As of December 13th, this functionality is even built into Backbone 0.9.9 (the Backbone object itself acts as a global event aggregator). 
 
 While a centralized aggregator works well, as programmers, we often try to avoid global cesspools. Thus, this project. With the `BackboneEventChannelFactory`, you now have the power to separate events into namespaced channels as you need them.
 
